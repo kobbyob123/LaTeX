@@ -1,0 +1,43 @@
+\documentclass[aspectratio=1610]{beamer} % Possible options = [3020, 1010, 1610, 169, 149, 54, 43(Default), 32]
+
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usetheme{Copenhagen} % Use the theme you want
+%\usecolortheme{beaver} % Use the theme you like : https://www.overleaf.com/learn/latex/Beamer#Reference_guide
+
+% Beamer Templates = [default, Bergen, Antibes, AnnArbor, Berkeley, Berlin, Boadilla, Cambridge US, Copenhagen, Darmstadt, Goettingen, Madrid, PaloAlto, Szeged, Warsaw]
+  
+% ColorThemes = [Beaver (Dominantly Red), Beetle (Dominantly Grey), Seahorse (Dominantly Light-Ash), Wolverine (Dominantly Yellow-Blue)]
+
+\setbeamertemplate{navigation symbols}{} % Hides the annoying navigation buttons which don't do anything at the bottom
+\setbeamertemplate{headline}{} % Hides the nav bar from the top if available depending on the theme
+\setbeamercovered{transparent}
+
+\title[Short Title]{\normalsize Long Title}
+\titlegraphic{\includegraphics[scale = 0.2]{logo}} % Replace <logo> with name of your logo and it should be in the same folder as this file
+\author{Author}
+\date{\today}
+\institute[Short name]{Long Name \\ Department \\ Extra Info}
+
+\begin{document}
+	\maketitle
+	
+	\begin{frame}{Table of Contents}
+		\tableofcontents
+	\end{frame}
+
+	\section{Header 1 Goes Here}
+		\begin{frame}{Header 1}
+			\lipsum[1]
+		\end{frame}
+
+	\section{Header 2 Goes Here}
+	\begin{frame}{Header 2}
+		\lipsum[1]
+	\end{frame}
+
+	\section{Header 3 Goes Here}
+	\begin{frame}{Header 3}
+		\lipsum[1]
+	\end{frame}
+\end{document}
